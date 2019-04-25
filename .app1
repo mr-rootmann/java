@@ -1,0 +1,32 @@
+package javaapp_1;
+
+public class JavaApp_1 {
+    
+    public String name;
+    
+    private double salary;
+    
+    public JavaApp_1 (String empName) {
+        
+        name = empName;
+    }
+    
+    public void setSalary (double empSal){
+        
+        salary = empSal;
+        
+    }
+    
+    public void printEmp(){
+        System.out.println("name: "+name);
+        System.out.println("salary: "+salary);
+        
+    }
+    
+    public static void main(String args[]){
+        JavaApp_1 emp1 = new JavaApp_1("Ivan");
+        emp1.setSalary(90000);
+        emp1.printEmp();
+    }
+}
+
